@@ -19,8 +19,8 @@ public class GUIPresentation extends JFrame {
         listener = new Listener();
         title = new Title("Jose's presentation", Color.gray);
         myPhoto = new JButton("This is me");
-        myHobby = new JButton("My hobby");
-        myExpectations = new JButton("My expectations");
+        myHobby = new JButton("My hobby double click");
+        myExpectations = new JButton("My expectations press m");
         myExpectations.setFocusable(false);
         containerButtons = new JPanel();
         containerButtons.addKeyListener(listener);
