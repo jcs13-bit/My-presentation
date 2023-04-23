@@ -88,8 +88,8 @@ public class GUIPresentation extends JFrame {
                 expectativesText.setBackground(null);
                 expectativesText.setForeground(Color.black);
                 containerIMages.add(expectativesText);
-                revalidate();
-                repaint();
+                containerIMages.revalidate();
+                containerIMages.repaint();
             }
         }
 
@@ -103,9 +103,12 @@ public class GUIPresentation extends JFrame {
             if (e.getClickCount() == 2 && e.getButton() == MouseEvent.BUTTON1 && e.getSource() == myHobby) {
                 this.image = new ImageIcon(getClass().getResource("/resources/hobby.jpg"));
                 imageLabel.setIcon(this.image);
+                expectativesText.setText("");
             } else if (e.getSource() == myPhoto) {
                 this.image = new ImageIcon(getClass().getResource("/resources/me.jpg"));
                 imageLabel.setIcon(this.image);
+                expectativesText.setText("");
+
             }
         }
 
